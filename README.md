@@ -1,2 +1,0 @@
-# IndustryGrid
-industry
