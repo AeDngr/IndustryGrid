@@ -1,0 +1,180 @@
+*{
+    box-sizing:border-box;
+}
+
+
+body{
+
+    margin:0;
+
+    font-family:
+    Arial,
+    sans-serif;
+
+    background:#f2f2f2;
+
+    color:#222;
+
+}
+
+
+
+/* 상단 */
+
+#header{
+
+    height:60px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 20px;
+
+    background:#222;
+
+    color:white;
+
+    font-size:18px;
+
+}
+
+
+
+/* 메뉴 */
+
+#menu{
+
+    position:fixed;
+
+    top:70px;
+
+    left:10px;
+
+}
+
+
+
+#menu button{
+
+    padding:10px 15px;
+
+    border:none;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    background:white;
+
+}
+
+
+
+/* 메뉴 목록 */
+
+#menuList{
+
+    margin-top:10px;
+
+}
+
+
+
+#menuList button{
+
+    display:block;
+
+    width:120px;
+
+    margin-bottom:5px;
+
+}
+
+
+
+/* 메인 */
+
+#main{
+
+    padding:80px 20px 20px;
+
+}
+
+
+
+/* 공장 화면 */
+
+#factoryGrid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(10,40px);
+
+    grid-template-rows:
+    repeat(10,40px);
+
+    gap:2px;
+
+    margin-top:20px;
+
+}
+
+
+
+/* 타일 */
+
+.tile{
+
+    width:40px;
+
+    height:40px;
+
+    background:#ddd;
+
+    border:1px solid #aaa;
+
+}
+
+
+
+/* 버튼 */
+
+button{
+
+    font-size:14px;
+
+}
+
+
+
+/* 모바일 */
+
+@media(max-width:600px){
+
+
+    #factoryGrid{
+
+        grid-template-columns:
+        repeat(10,30px);
+
+        grid-template-rows:
+        repeat(10,30px);
+
+    }
+
+
+
+    .tile{
+
+        width:30px;
+
+        height:30px;
+
+    }
+
+
+}
